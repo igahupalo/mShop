@@ -47,7 +47,6 @@ extension SpecialOffersTableViewCell: UICollectionViewDelegate, UICollectionView
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        DatabaseConfig.time1 = Date().millisecondsSince1970
         let productId = products[indexPath.row].id
         delegate?.didSelectProduct(productId: productId)
     }

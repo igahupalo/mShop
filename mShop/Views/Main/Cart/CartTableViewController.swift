@@ -24,20 +24,8 @@ class CartTableViewController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        DatabaseConfig.time1 = Date().millisecondsSince1970
         cartPositions = getCartUseCase?.getCart() ?? []
         tableView.reloadData()
-    }
-
-    override func viewDidLayoutSubviews() {
-        if !cartPositions.isEmpty {
-            DatabaseConfig.time4 = Date().millisecondsSince1970
-            print(String(DatabaseConfig.time1) + ";" +
-                  String(DatabaseConfig.time2) + ";" +
-                  String(DatabaseConfig.time3) + ";" +
-                  String(DatabaseConfig.time4))
-        }
-
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

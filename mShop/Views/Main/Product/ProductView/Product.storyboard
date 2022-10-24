@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qTy-Eh-H6W">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductImageTableViewCell" id="cyP-3H-gHg" customClass="ProductImageTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="260"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cyP-3H-gHg" id="Pjl-M6-lRH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTitleTableViewCell" id="qyb-N8-a7q" customClass="ProductTitleTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="304.5" width="414" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="310" width="414" height="46.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qyb-N8-a7q" id="JDn-UF-I9f">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
@@ -74,7 +74,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductPriceTableViewCell" id="Lxv-fv-TbZ" customClass="ProductPriceTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="351" width="414" height="40.5"/>
+                                        <rect key="frame" x="0.0" y="356.5" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lxv-fv-TbZ" id="HJZ-be-eXF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
@@ -99,7 +99,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductActionsTableViewCell" id="7AM-kY-75E" customClass="ProductActionsTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="391.5" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="397" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7AM-kY-75E" id="oc7-nK-8Nw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -134,7 +134,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductDescriptionTableViewCell" id="Mb2-9n-2wW" customClass="ProductDescriptionTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="451.5" width="414" height="40.5"/>
+                                        <rect key="frame" x="0.0" y="457" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mb2-9n-2wW" id="HK9-xD-jRg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
@@ -159,14 +159,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductVideoTableViewCell" rowHeight="234" id="cU5-gR-uCV" customClass="ProductVideoTableViewCell" customModule="mShop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="492" width="414" height="234"/>
+                                        <rect key="frame" x="0.0" y="497.5" width="414" height="234"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cU5-gR-uCV" id="Gin-vj-g5q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyM-0V-EHW">
-                                                    <rect key="frame" x="20" y="11" width="374" height="212"/>
+                                                    <rect key="frame" x="-76" y="7" width="566" height="220"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="220" id="mqy-64-Kzt"/>
                                                     </constraints>
@@ -184,10 +184,8 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="FyM-0V-EHW" firstAttribute="leading" secondItem="Gin-vj-g5q" secondAttribute="leadingMargin" id="0BN-eQ-Lfz"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="FyM-0V-EHW" secondAttribute="trailing" id="dDX-BU-UAF"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="FyM-0V-EHW" secondAttribute="bottom" id="eaD-zM-VaQ"/>
-                                                <constraint firstItem="FyM-0V-EHW" firstAttribute="top" secondItem="Gin-vj-g5q" secondAttribute="topMargin" id="x7Z-vL-b1U"/>
+                                                <constraint firstItem="FyM-0V-EHW" firstAttribute="centerY" secondItem="Gin-vj-g5q" secondAttribute="centerY" id="3DG-Fj-EFG"/>
+                                                <constraint firstItem="FyM-0V-EHW" firstAttribute="centerX" secondItem="Gin-vj-g5q" secondAttribute="centerX" id="yv1-3c-N3L"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -224,7 +222,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="105"/>
         <image name="thumbnail" width="512" height="329.5"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

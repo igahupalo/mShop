@@ -52,20 +52,17 @@ class ProductRepository: ProductRepositoryProtocol {
     }
 
     public func getProduct(id: Int, completionHandler: @escaping (Product?, Error?) -> ()) {
-//        DatabaseConfig.time2 = Date().millisecondsSince1970
         AF.request("https://fakestoreapi.com/products/" + String(id), method: .get)
             .responseDecodable(of: Product.self) { response in
                 if let error = response.error {
                     completionHandler(nil, error)
                 }
                 let result = response.value
-//                DatabaseConfig.time4 = Date().millisecondsSince1970
                 completionHandler(result, nil)
             }
     }
 
     public func getProducts(categoryName: String, completionHandler: @escaping ([Product]?, Error?) -> ()) {
-//        DatabaseConfig.time2 = Date().millisecondsSince1970
 
         let formattedCategoryName = categoryName.replacingOccurrences(of: " ", with: "%20")
         AF.request("https://fakestoreapi.com/products/category/" + formattedCategoryName, method: .get)
@@ -73,7 +70,6 @@ class ProductRepository: ProductRepositoryProtocol {
                 if let error = response.error {
                     completionHandler(nil, error)
                 } else if let result = response.value {
-//                    DatabaseConfig.time3 = Date().millisecondsSince1970
                     completionHandler(result, nil)
                 }
             }

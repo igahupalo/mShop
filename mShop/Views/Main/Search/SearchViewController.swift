@@ -39,7 +39,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        DatabaseConfig.time1 = Date().millisecondsSince1970
         let productListStoryboard = UIStoryboard(name: "ProductList", bundle: nil)
         if let viewController = productListStoryboard.instantiateViewController(identifier: "ProductListViewController") as? ProductListViewController {
             viewController.setCategory(categories[indexPath.row])

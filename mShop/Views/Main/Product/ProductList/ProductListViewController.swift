@@ -24,15 +24,8 @@ class ProductListViewController: UIViewController {
         self.category = category
         navigationItem.title = category.title
         getProductsUseCase.getProducts(category: category) { products in
-            let multiplied: [Product] = (products + products + products + products + products +
-                                products + products + products + products + products +
-                                products + products + products + products + products +
-                                products + products + products + products + products +
-                                products + products + products + products + products)
-
-            self.products = multiplied
+            self.products = products
             self.activityIndicatorView.stopAnimating()
-//            DatabaseConfig.time4 = Date().millisecondsSince1970
             self.productsTableView.reloadData()
         }
 
@@ -51,15 +44,6 @@ extension ProductListViewController: UITableViewDataSource, UITableViewDelegate 
         if let product = products?[indexPath.row] {
             cell.setProduct(product)
         }
-
-//        if let rows = products?.count, indexPath.row == rows - 1 {
-//            DatabaseConfig.time5 = Date().millisecondsSince1970
-//            print(String(DatabaseConfig.time1) + ";" +
-//                  String(DatabaseConfig.time2) + ";" +
-//                  String(DatabaseConfig.time3) + ";" +
-//                  String(DatabaseConfig.time4) + ";" +
-//                  String(DatabaseConfig.time5))
-//        }
 
         return cell
     }

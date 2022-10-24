@@ -66,7 +66,7 @@ private enum ProductViewRows: Int {
     case image, title, price, actions, description, video
 
     static func allCases() -> [ProductViewRows] {
-        [.image, .title, .price, .actions, .description, .video]
+        [.image, .title, .price, .actions, .description]
     }
 
     static func numberOfCases() -> Int {

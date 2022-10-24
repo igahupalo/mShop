@@ -31,7 +31,6 @@ class ProductViewController: UIViewController {
                     self.product = product
                     self.productViewCellFactory = ProductViewCellFactory(tableView: self.tableView, product: product, productActionsDelegate: self, productVideoDelegate: self)
                     self.activityIndicatorView.stopAnimating()
-//                    DatabaseConfig.time5 = Date().millisecondsSince1970
                     self.tableView.reloadData()
                 }
             }
@@ -46,15 +45,6 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = productViewCellFactory?.cellForRowAt(indexPath: indexPath) ?? UITableViewCell()
-//        if let rows = productViewCellFactory?.numberOfRows(), indexPath.row == rows - 1 {
-//            DatabaseConfig.time6 = Date().millisecondsSince1970
-//            print(String(DatabaseConfig.time1) + ";" +
-//                  String(DatabaseConfig.time2) + ";" +
-//                  String(DatabaseConfig.time3) + ";" +
-//                  String(DatabaseConfig.time4) + ";" +
-//                  String(DatabaseConfig.time5) + ";" +
-//                  String(DatabaseConfig.time6))
-//        }
         return cell
     }
 }
