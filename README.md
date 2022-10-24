@@ -14,8 +14,7 @@ The application was implemented with usage of:
 
 ## Screenshots
 
-<img width=20% src="https://user-images.githubusercontent.com/56322245/197600573-313fba4c-e5af-46ef-b618-982ede70f9e4.png"> <img width=20% src="https://user-images.githubusercontent.com/56322245/197600618-4d9b6394-3ee6-402f-9c76-bd58cec166d4.png">
-<img width=20% src="https://user-images.githubusercontent.com/56322245/197600669-17a4f50f-8924-465e-aeea-aeebcbb884ac.png"> <img width=20% src="https://user-images.githubusercontent.com/56322245/197600699-b2bd473a-735a-4088-a275-b4d6555afa2d.png">
+<img width=24% src="https://user-images.githubusercontent.com/56322245/197600573-313fba4c-e5af-46ef-b618-982ede70f9e4.png"> <img width=24% src="https://user-images.githubusercontent.com/56322245/197600618-4d9b6394-3ee6-402f-9c76-bd58cec166d4.png"> <img width=24% src="https://user-images.githubusercontent.com/56322245/197600669-17a4f50f-8924-465e-aeea-aeebcbb884ac.png"> <img width=24% src="https://user-images.githubusercontent.com/56322245/197600699-b2bd473a-735a-4088-a275-b4d6555afa2d.png">
 
 
 ## Running the App
