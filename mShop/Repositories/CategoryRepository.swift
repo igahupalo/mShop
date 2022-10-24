@@ -12,7 +12,6 @@ protocol CategoryRepositoryProtocol {
     // Returns list of all categories in the store.
     // - Parameters: none
     // - Returns: array of Category structs
-
     func getAllCategories(completionHandler: @escaping ([Category]?, Error?) -> ())
 }
 

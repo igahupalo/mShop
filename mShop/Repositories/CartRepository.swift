@@ -8,9 +8,25 @@
 import RealmSwift
 
 protocol CartRepositoryProtocol {
+
+    // Adds product to cart. If such a product already exists in the cart, number of items is incremented. Otherwise a new position is added.
+    // - Parameters: CartPosition struct
+    // - Returns: void
     func addToCart(cartPosition: CartPosition)
+
+    // Returns list of positions added to cart stored in local database.
+    // - Parameters: none
+    // - Returns: array of CartPosition structs
     func getCartPositions() -> [CartPosition]
+
+    // Removes from cart position of product with given id.
+    // - Parameters: product id
+    // - Returns: void
     func deleteCartPosition(productId: Int)
+
+    // Updates quantity of specific product with given id stored in database. If quantity is equal zero, the product is delated.
+    // - Parameters: product id and new quantity
+    // - Returns: void
     func updateCartPositionQuantity(productId: Int, quantity: Int)
 }
 

@@ -19,11 +19,14 @@ protocol ProductRepositoryProtocol {
     // - Returns: a Product struct or nil
     func getProduct(id: Int, completionHandler: @escaping (Product?, Error?) -> ())
 
-    // Returns list of products of specified categorye.
+    // Returns list of products of specified category.
     // - Parameters: String with category name
     // - Returns: array of Product structs
     func getProducts(categoryName: String, completionHandler: @escaping ([Product]?, Error?) -> ())
 
+    // Returns list of 5 sample products.
+    // - Parameters: none
+    // - Returns: array of Product structs
     func getSampleProducts(completionHandler: @escaping ([Product]?, Error?) -> ())
 }
 
