@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xXx-3n-gtd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NWW-Mi-anw">
+            <objects>
+                <tabBarController id="xXx-3n-gtd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O2a-PL-Jld">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="411-za-Orl" kind="relationship" relationship="viewControllers" id="EQl-Fx-7BO"/>
+                        <segue destination="bzj-pr-bmG" kind="relationship" relationship="viewControllers" id="PUg-sE-BlB"/>
+                        <segue destination="4Ci-4y-4gQ" kind="relationship" relationship="viewControllers" id="K7J-Zu-ljA"/>
+                        <segue destination="BXc-W1-mzF" kind="relationship" relationship="viewControllers" id="0XD-Sm-qyt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czr-eT-yB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="669"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EwV-o3-bak">
+            <objects>
+                <navigationController id="bzj-pr-bmG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Av7-Q8-hwZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Zqm-yI-l5U">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="P4K-M6-Oem" kind="relationship" relationship="rootViewController" id="PWJ-3l-rGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAC-ca-9Kk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1251" y="1578"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="mib-IO-0Zj">
+            <objects>
+                <navigationController id="4Ci-4y-4gQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" selectedImage="cart.fill" id="nPE-GT-M1g"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oEK-E2-Q68">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bMr-ym-jZg" kind="relationship" relationship="rootViewController" id="Wtu-AF-PVl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwJ-aZ-D0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="1578"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="a9T-wO-fis">
+            <objects>
+                <navigationController id="BXc-W1-mzF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="9aT-gd-wL8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="owe-zV-8Op">
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CJq-5H-PQU" kind="relationship" relationship="rootViewController" id="uLX-uW-JWl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6V-uv-UhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="1578"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="vmn-L5-j7C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Discover" id="411-za-Orl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="oM3-9y-D6F"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gc2-Na-NPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2292" y="1110"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="z38-a3-hSO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="P4K-M6-Oem" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kf4-xU-cmD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sId-kP-Q4t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839" y="2399"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="jSN-AJ-Hzj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" id="bMr-ym-jZg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mie-1q-FZ2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysR-Pc-eUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="2399"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="nSP-wV-xEW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="CJq-5H-PQU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RG8-WO-i5I"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTz-og-9v4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="2399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
