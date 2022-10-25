@@ -22,7 +22,7 @@ The application was implemented with usage of:
 1. Clone this repository.
 1. Open shell window and navigate to project folder.
 1. Run `pod install`.
-1. Open `Furdresser.xcworkspace` and run the project on selected device or simulator.
+1. Open `mShop.xcworkspace` and run the project on selected device or simulator.
 
 ## Data source
 
